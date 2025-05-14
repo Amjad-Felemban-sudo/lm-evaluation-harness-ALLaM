@@ -1,0 +1,28 @@
+tag:
+  - truthfulqa
+  - multiple_choice
+task: araTruthfulQA
+dataset_name: araTruthfulQA
+dataset_name: null
+dataset_path: lm_eval/tasks/araTruthfulQA
+training_split: null
+validation_split: validation
+test_split: test
+output_type: multiple_choice
+doc_to_text: query
+doc_to_target:  gold
+doc_to_choice: "{{choices}}"
+process_docs: !function utils.process_docs
+should_decontaminate: True
+doc_to_decontamination_query: query
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 0.3
+dataset_kwargs:
+  trust_remote_code: true

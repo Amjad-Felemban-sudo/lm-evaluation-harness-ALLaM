@@ -1,0 +1,30 @@
+tag:
+  - multiple_choice
+dataset_name: sdaia_mcq_ext
+task: sdaia_mcq_ext
+dataset_path: lm_eval/tasks/sdaia_mcq_ext/sdaia_mcq_ext.py
+description: "فيما يلي أسئلة الاختيار من متعدد (مع الإجابات) من فضلك اختر إجابة واحدة دون شرح"
+doc_to_text: query
+doc_to_target: gold
+doc_to_choice: "{{choices}}"
+should_decontaminate: true
+doc_to_decontamination_query: Question
+output_type: multiple_choice
+process_docs: !function utils.process_docs
+# fewshot_config:
+#     sampler: balanced_cat
+validation_split: validation
+fewshot_split: validation
+test_split: test 
+output_type: multiple_choice
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+    version: 2.0
+dataset_kwargs:
+  trust_remote_code: true

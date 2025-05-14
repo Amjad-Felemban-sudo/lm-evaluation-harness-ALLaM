@@ -1,0 +1,30 @@
+tag:
+  - multiple_choice
+task: moe_ien_tf
+dataset_name: moe_ien_tf
+dataset_path: lm_eval/tasks/moe_ien_tf/moe_ien_tf.py
+validation_split: validation
+fewshot_split: validation
+
+test_split: test
+output_type: multiple_choice
+description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{Subject}}\n الرجاء تصنيف العبارة إلى 'صحيحة' أو 'خاطئة' دون شرح "
+#description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{Subject}}\n الرجاء تصنيف العبارة إلى 'صواب' أو 'خطأ' دون شرح "
+doc_to_text: query
+doc_to_choice: choices
+doc_to_target: gold
+process_docs: !function utils.process_docs
+# fewshot_config:
+#     sampler: balanced_cat
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 2.0
+dataset_kwargs:
+  trust_remote_code: true
