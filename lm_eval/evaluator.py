@@ -184,6 +184,7 @@ def simple_evaluate(
     if seed_message:
         eval_logger.info(" | ".join(seed_message))
 
+    print(f"List of requested tasks for evaluation are: {tasks}")
     if tasks is None:
         tasks = []
     if len(tasks) == 0:
