@@ -2,7 +2,7 @@ import dataclasses
 from typing import Dict, Optional, Union
 
 from lm_eval.tasks.ar_ifeval.instructions_functions import *
-from lm_eval.utils import eval_logger
+# from lm_eval.utils import eval_logger
 
 @dataclasses.dataclass
 class InputExample:
