@@ -1,5 +1,5 @@
 task: ar_ifeval
-dataset_path: lm_eval/tasks/ar_ifeval/ar_ifeval.py
+dataset_path: lm_eval/tasks/ar_ifeval/ar_ifeval.pyy
 dataset_name: ar_ifeval
 dataset_kwargs:
   trust_remote_code: true
