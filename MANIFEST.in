@@ -1,1 +1,22 @@
 recursive-include tests
+
+recursive-include lm_eval/tasks/ar_ifeval *.py
+recursive-include lm_eval/tasks/ar_ifeval *.json
+
+recursive-include lm_eval/tasks/sdaia_mcq_ext *.py
+recursive-include lm_eval/tasks/sdaia_mcq_ext *.json
+
+recursive-include lm_eval/tasks/moe_ien_mcq *.py
+recursive-include lm_eval/tasks/moe_ien_mcq *.json
+
+recursive-include lm_eval/tasks/araMath_v3 *.py
+recursive-include lm_eval/tasks/araMath_v3 *.json
+
+recursive-include lm_eval/tasks/araTruthfulQA *.py
+recursive-include lm_eval/tasks/araTruthfulQA *.json
+
+recursive-include lm_eval/tasks/moe_ien_tf *.py
+recursive-include lm_eval/tasks/moe_ien_tf *.json
+
+recursive-include lm_eval/tasks/etec *.py
+recursive-include lm_eval/tasks/etec *.json
