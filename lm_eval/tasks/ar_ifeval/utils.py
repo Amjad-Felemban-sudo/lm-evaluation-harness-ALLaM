@@ -1,6 +1,7 @@
 import dataclasses
 from typing import Dict, Optional, Union
 
+import lm_eval
 from lm_eval.tasks.ar_ifeval.instructions_functions import *
 # from lm_eval.utils import eval_logger
 
@@ -156,3 +157,6 @@ def agg_inst_level_acc(items):
     flat_items = [item for sublist in items for item in sublist]
     inst_level_acc = sum(flat_items) / len(flat_items)
     return inst_level_acc
+
+def get_path():
+    return (lm_eval.__file__)

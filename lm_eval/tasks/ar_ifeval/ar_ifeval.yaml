@@ -1,6 +1,6 @@
 task: ar_ifeval
 dataset_path: ALLaM-AI/AraIFEval
-dataset_name: ar_ifeval
+dataset_name: default
 dataset_kwargs:
   trust_remote_code: true
 output_type: generate_until
