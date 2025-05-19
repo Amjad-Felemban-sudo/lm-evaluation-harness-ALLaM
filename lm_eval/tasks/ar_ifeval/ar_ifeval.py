@@ -14,9 +14,8 @@ import numpy as np
 import datasets
 from pathlib import Path
 
-# dirname = os.getcwd()
-# DATA_ROOT = os.path.join(dirname, "lm_eval", "tasks", "ar_ifeval")
-DATA_ROOT = "/home/user/.pyenv/versions/3.10.17/lib/python3.10/site-packages/lm_eval/tasks/ar_ifeval"
+dirname = os.getcwd()
+DATA_ROOT = os.path.join(dirname, "lm_eval", "tasks", "ar_ifeval")
 
 _ExamsAr_CITATION = """\
 @inproceedings{
