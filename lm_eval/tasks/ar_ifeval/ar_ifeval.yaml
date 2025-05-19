@@ -1,10 +1,10 @@
 task: ar_ifeval
-dataset_path: ./ar_ifeval.py
+dataset_path: ALLaM-AI/AraIFEval
 dataset_name: ar_ifeval
 dataset_kwargs:
   trust_remote_code: true
 output_type: generate_until
-test_split: test
+test_split: train
 num_fewshot: 0
 doc_to_text: prompt
 doc_to_target: 0
