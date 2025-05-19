@@ -2,9 +2,8 @@ tag:
   - truthfulqa
   - multiple_choice
 task: araTruthfulQA
-dataset_name: araTruthfulQA
-dataset_name: null
-dataset_path: lm_eval/tasks/araTruthfulQA
+dataset_name: default
+dataset_path: ALLaM-AI/AraTruthfulQA
 training_split: null
 validation_split: validation
 test_split: test

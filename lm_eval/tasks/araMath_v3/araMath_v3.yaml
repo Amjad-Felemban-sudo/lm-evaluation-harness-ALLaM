@@ -1,8 +1,8 @@
 tag:
   - multiple_choice
 task: araMath_v3
-dataset_name: araMath_v3
-dataset_path: lm_eval/tasks/araMath_v3/araMath_v3.py
+dataset_name: default
+dataset_path: ALLaM-AI/AraMath
 training_split: null
 validation_split: validation
 test_split: test
