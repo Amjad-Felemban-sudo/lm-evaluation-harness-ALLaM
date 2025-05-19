@@ -158,5 +158,5 @@ def agg_inst_level_acc(items):
     inst_level_acc = sum(flat_items) / len(flat_items)
     return inst_level_acc
 
-def get_path():
-    return (lm_eval.__file__)
+# def get_path():
+#     return (lm_eval.__file__)
