@@ -53,7 +53,7 @@ def process_sample(doc, response, strength):
     # print('===================', type(doc["instruction_following_prompt"]))
     # print(doc["instruction_following_prompt"])
     # print(doc.keys())
-    sample = {"instruction_following_prompt": {'prompt': doc['prompt'], 'categories': doc['categories']}}
+    sample = {"instruction_following_prompt": {'prompt': doc['prompt'], 'categories': doc['instruction_list']}}
     # sample = doc
     for i, key in enumerate(doc):
         if i > 2:
@@ -117,7 +117,7 @@ def process_sample(doc, response, strength):
             else:
                 is_following_list.append(False)
     return OutputExample(
-    instruction_id_list=doc['categories'],
+    instruction_id_list=doc['instruction_list'],
     prompt=doc['prompt'],
     response=response,
     follow_all_instructions=all(is_following_list),
