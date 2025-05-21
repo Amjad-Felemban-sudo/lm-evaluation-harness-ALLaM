@@ -1,8 +1,8 @@
 tag:
   - multiple_choice
-dataset_name: sdaia_mcq_ext
+dataset_name: AraPro
 task: sdaia_mcq_ext
-dataset_path: lm_eval/tasks/sdaia_mcq_ext/sdaia_mcq_ext.py
+dataset_path: ALLaM-AI/test_dataset
 description: "فيما يلي أسئلة الاختيار من متعدد (مع الإجابات) من فضلك اختر إجابة واحدة دون شرح"
 doc_to_text: query
 doc_to_target: gold
