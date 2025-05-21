@@ -3,7 +3,9 @@ import json
 INPUT_PATH = "Arabic_IF_Eval.jsonl"
 OUTPUT_PATH = "Arabic_IF_Eval_Flat.jsonl"
 PROMPT_KEY = "prompt"
+INSTRUCTION_KEY = "instruction_list"
 CATEGORIES_KEY = "categories"
+
 
 def flatten_record(record):
     # Starting with only top level records and ignoring multi-hierarchical items (instruction_following_prompt)
@@ -13,7 +15,7 @@ def flatten_record(record):
         # If key "instruction_following_prompt" exits, replicate the key at one level higher in the flat dictionary
         prompt_obj = record["instruction_following_prompt"]
         flat[PROMPT_KEY] = prompt_obj.get(PROMPT_KEY)
-        flat[CATEGORIES_KEY] = prompt_obj.get(CATEGORIES_KEY)
+        flat[INSTRUCTION_KEY] = prompt_obj.get(CATEGORIES_KEY)
     return flat
 
 # Open both files (input file: infile | output file: outfile), strip each sample, flatten, and load to the output file
