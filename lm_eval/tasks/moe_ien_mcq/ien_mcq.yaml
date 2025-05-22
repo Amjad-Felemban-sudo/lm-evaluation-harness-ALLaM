@@ -1,6 +1,6 @@
-dataset_name: moe_ien_mcq
+dataset_name: default
 task: moe_ien_mcq
-dataset_path: lm_eval/tasks/moe_ien_mcq/ien_moe_mcq.py
+dataset_path: ALLaM-AI/IEN_MCQ_test
 
 description : "فيما يلي أسئلة الاختيار من متعدد (مع الإجابات) في {{Subject}}"
 doc_to_text:  Query

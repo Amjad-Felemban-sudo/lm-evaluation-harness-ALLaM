@@ -1,8 +1,8 @@
 tag:
   - multiple_choice
 task: moe_ien_tf
-dataset_name: moe_ien_tf
-dataset_path: lm_eval/tasks/moe_ien_tf/moe_ien_tf.py
+dataset_name: default
+dataset_path: ALLaM-AI/IEN_TF_test
 validation_split: validation
 fewshot_split: validation
 
