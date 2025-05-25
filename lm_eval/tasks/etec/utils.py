@@ -16,7 +16,7 @@ def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:
         out_doc = {
                 "query": format_example(doc, keys_en),
             "choices": keys_en,
-            "gold": keys_ar.index(doc["label"]),
+            "gold": int(doc["label"]) - 1,
         }
         return out_doc
     
