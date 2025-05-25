@@ -1,0 +1,32 @@
+tag:
+  - multiple_choice
+task: etec
+dataset_name: default
+dataset_path: ALLaM-AI/Etec_test
+training_split: null
+validation_split: null
+test_split: test
+output_type: multiple_choice
+description: "فيما يلي أسئلة الاختيار من متعدد (مع الإجابات) من فضلك اختر إجابة واحدة دون شرح\n "
+doc_to_text: query
+doc_to_choice: choices
+doc_to_target: gold
+should_decontaminate: true
+doc_to_decontamination_query: query
+process_docs: !function utils.process_docs
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 0.0
+dataset_kwargs:
+  trust_remote_code: true
+
+
+
+
+
