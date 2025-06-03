@@ -49,7 +49,7 @@ def extract_boxed_text(text, gold):
 def process_results(doc: dict, results: List[str]) -> Dict[str, int]:
     response = results[0]
     pred = extract_boxed_text(response, gold)
-    gold = doc["answer"]
+    gold = doc["label"]
     results = {
         "acc": 1 if pred == gold else 0
     }
