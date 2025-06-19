@@ -8,8 +8,8 @@ def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:
             prefixes = ["(A)", "(B)", "(C)", "(D)"]
             for prefix in prefixes:
                 if choice.startswith(prefix + " "):
-                    return choice[len(prefix) + 1:]  
-            return choice 
+                    return choice[len(prefix) + 1:]
+            return choice
 
         def format_example(doc, keys):
             question = doc["question"].strip()
@@ -27,7 +27,6 @@ def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:
             "gold": keys_en.index(doc["label"]),
         }
         return out_doc
-    
     return dataset.map(_process_docs)
 
 def extract_boxed_text(text, gold):
