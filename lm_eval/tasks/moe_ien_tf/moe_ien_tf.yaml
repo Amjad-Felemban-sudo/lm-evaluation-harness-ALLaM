@@ -2,7 +2,7 @@ tag:
   - multiple_choice
 task: moe_ien_tf
 dataset_name: default
-dataset_path: ALLaM-AI/IEN_TF_test
+dataset_path: ALLaM-AI/IEN_TF
 validation_split: validation
 fewshot_split: validation
 

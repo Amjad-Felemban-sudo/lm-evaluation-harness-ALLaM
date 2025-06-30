@@ -2,7 +2,7 @@ tag:
   - multiple_choice
 task: etec
 dataset_name: default
-dataset_path: ALLaM-AI/Etec_test
+dataset_path: ALLaM-AI/Etec
 training_split: null
 validation_split: null
 test_split: test
