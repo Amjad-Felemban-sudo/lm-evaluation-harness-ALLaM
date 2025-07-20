@@ -33,7 +33,7 @@ dependencies = [
     "sqlitedict==2.1.0",
     "torch==2.5.0",
     "tqdm-multiprocess==0.0.11",
-    "transformers @ git+https://github.com/huggingface/transformers.git@0dc2df5ddafe3cb5824ad24e85beba13e0aa6726",
+    "transformers==4.47.1",
     "zstandard==0.22.0",
     "dill==0.3.7",
     "word2number==1.1",
