@@ -8,7 +8,7 @@ fewshot_split: validation
 
 test_split: test
 output_type: multiple_choice
-description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{Subject}}\n الرجاء تصنيف العبارة إلى 'صحيحة' أو 'خاطئة' دون شرح "
+description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{SubjectTitle}}\n الرجاء تصنيف العبارة إلى 'صحيحة' أو 'خاطئة' دون شرح "
 #description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{Subject}}\n الرجاء تصنيف العبارة إلى 'صواب' أو 'خطأ' دون شرح "
 doc_to_text: query
 doc_to_choice: choices
