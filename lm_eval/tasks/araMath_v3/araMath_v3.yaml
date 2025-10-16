@@ -2,7 +2,7 @@ tag:
   - multiple_choice
 task: araMath_v3
 dataset_name: default
-dataset_path: ALLaM-AI/AraMath
+dataset_path: humain-ai/AraMath
 training_split: null
 validation_split: validation
 test_split: test

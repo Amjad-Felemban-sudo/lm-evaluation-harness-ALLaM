@@ -3,7 +3,7 @@ tag:
   - multiple_choice
 task: araTruthfulQA
 dataset_name: default
-dataset_path: ALLaM-AI/AraTruthfulQA
+dataset_path: humain-ai/AraTruthfulQA
 training_split: null
 validation_split: validation
 test_split: test
@@ -22,6 +22,6 @@ metric_list:
     aggregation: mean
     higher_is_better: true
 metadata:
-  version: 0.3
+  version: 0.2
 dataset_kwargs:
   trust_remote_code: true

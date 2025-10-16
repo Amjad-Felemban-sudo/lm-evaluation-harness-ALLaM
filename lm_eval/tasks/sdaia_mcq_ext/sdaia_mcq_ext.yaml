@@ -2,7 +2,7 @@ tag:
   - multiple_choice
 dataset_name: AraPro
 task: sdaia_mcq_ext
-dataset_path: ALLaM-AI/AraPro
+dataset_path: humain-ai/AraPro
 description: "فيما يلي أسئلة الاختيار من متعدد (مع الإجابات) من فضلك اختر إجابة واحدة دون شرح"
 doc_to_text: query
 doc_to_target: gold

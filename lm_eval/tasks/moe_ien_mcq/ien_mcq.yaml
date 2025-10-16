@@ -1,6 +1,6 @@
 dataset_name: default
 task: moe_ien_mcq
-dataset_path: ALLaM-AI/IEN_MCQ
+dataset_path: humain-ai/IEN_MCQ
 
 description : "فيما يلي أسئلة الاختيار من متعدد (مع الإجابات) في {{Subject}}"
 doc_to_text:  Query
@@ -29,7 +29,7 @@ metric_list:
     higher_is_better: true
 
 metadata:
-    version: 0.0
+    version: 1.0
 
 dataset_kwargs:
   trust_remote_code: true

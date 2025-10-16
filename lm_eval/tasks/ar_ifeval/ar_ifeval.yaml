@@ -1,5 +1,5 @@
 task: ar_ifeval
-dataset_path: ALLaM-AI/AraIFEval
+dataset_path: humain-ai/AraIFEval
 dataset_name: flat
 dataset_kwargs:
   trust_remote_code: true

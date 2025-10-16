@@ -66,6 +66,7 @@ class MOE_IEN_TF_SS(datasets.GeneratorBasedBuilder):
             name= "moe_ien_tf",
             description=textwrap.dedent("IN ARABIC "),
             text_features={"Question": "Question",
+                                 "QuestionCode": 'QuestionCode',
                                 "Subject": "Subject",
                                 "Stage": "Stage",
                                 "Grade": "Grade",
@@ -90,6 +91,7 @@ class MOE_IEN_TF_SS(datasets.GeneratorBasedBuilder):
     
     def _info(self):
         features = {"Question": datasets.Value("string"),
+                    "QuestionCode": datasets.Value("string"),
                     "Stage": datasets.Value("string"),
                     "Subject": datasets.Value("string"),
                     "Grade": datasets.Value("string"),
@@ -161,6 +163,7 @@ class MOE_IEN_TF_SS(datasets.GeneratorBasedBuilder):
                 answer_value = None
                 continue
             row = {
+                    "QuestionCode": row['QuestionCode'],
                     "Question": row['Question'],
                     "Subject": row['Speciality'],
                     "Stage": row['Stage'],

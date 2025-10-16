@@ -2,13 +2,13 @@ tag:
   - multiple_choice
 task: moe_ien_tf
 dataset_name: default
-dataset_path: ALLaM-AI/IEN_TF
+dataset_path: humain-ai/IEN_TF
 validation_split: validation
 fewshot_split: validation
 
 test_split: test
 output_type: multiple_choice
-description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{SubjectTitle}}\n الرجاء تصنيف العبارة إلى 'صحيحة' أو 'خاطئة' دون شرح "
+description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{Subject}}\n الرجاء تصنيف العبارة إلى 'صحيحة' أو 'خاطئة' دون شرح "
 #description: "فيما يلي عبارات إما صحيحة أو خاطئة حول {{Subject}}\n الرجاء تصنيف العبارة إلى 'صواب' أو 'خطأ' دون شرح "
 doc_to_text: query
 doc_to_choice: choices
@@ -25,6 +25,6 @@ metric_list:
     aggregation: mean
     higher_is_better: true
 metadata:
-  version: 2.0
+  version: 3.1
 dataset_kwargs:
   trust_remote_code: true
